@@ -1,0 +1,43 @@
+/* Seletor de elementos */
+
+/* body -> seletor 
+font-family -> propriedade */
+body{
+    background-color: #30302e;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #8cc9e4;
+    padding: 10px;
+}
+
+section p{
+    color: orange;
+}
+
+/* Seletor de classe */
+.destaque{
+    background-color: #ffd700;
+    color: black;
+    padding: 10px;
+    border-left: 7px solid #ff6347;
+    /* Espessura da borda, tipo e cor */
+    border-radius: 10px;
+}
+
+/* Seletor de id */
+#unico{
+    background-color: #8cc9e4;
+    color: #30302e;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 50px;
+    width: 250px;
+}
