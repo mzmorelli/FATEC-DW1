@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel com Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <!-- O data-bs-ride serve para acessar o JavaScript do Bootstrap -->
+    <div class="carousel slide" id="banner" data-bs-ride="carousel">
+        <!-- Galeria de imagens -->
+        <div class="carousel-inner" id="imagens">
+            <!-- Item ativo do carousel -->
+            <div class="carousel-item active">
+                <!-- Primeira imagem do carousel -->
+                 <img src="https://picsum.photos/id/901/1100/500" class="w-100 d-block">
+                 <!-- Inserindo texto na imagem do carousel -->
+                  <div class="carousel-caption">
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, labore.</h2>
+                  </div>
+            </div>
+
+            <!-- Segundo item do carousel -->
+            <div class="carousel-item">
+                 <img src="https://picsum.photos/id/910/1100/500" class="w-100 d-block">
+            </div>
+
+            <!-- Terceiro item do carousel -->
+            <div class="carousel-item">
+                 <img src="https://picsum.photos/id/911/1100/500" class="w-100 d-block">
+            </div>
+        </div>
+        <!-- Botões Inferiores do Carousel -->
+        <div class="carousel-indicators" id="indicadores">
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+        </div>
+        <!-- Botões de navegação (esquerda/direita) -->
+         <button type="button" data-bs-target="#banner" data-bs-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+         </button>
+         <button type="button" data-bs-target="#banner" data-bs-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+         </button>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

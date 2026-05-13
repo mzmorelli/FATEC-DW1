@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Botão para acionar a sidebar -->
+     <div class="my-4 mx-4">
+        <h3>Janela lateral</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat dolore itaque quod, pariatur nihil. Qui est ab neque corporis.</p>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#menu">Abrir</button>
+     </div>
+
+     <!-- Janela lateral -->
+      <!-- A janela pode surgir da esquerda (offcanvas-start), da direita (offcanvas-end) ou do topo da página (offcanvas-top). -->
+      <div class="offcanvas offcanvas-end" id="menu">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Menu de opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="#">Home</a><br>
+            <a href="#">Produtos</a><br>
+            <a href="#">Serviços</a><br>
+            <a href="#">Sobre nós</a><br>
+        </div>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
